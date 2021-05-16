@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-from tabulate import tabulate
 
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
@@ -193,6 +192,7 @@ def raw_datalines(df):
 
 
 def main():
+    # That main function will execute all the functions above to run the complete programm
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
