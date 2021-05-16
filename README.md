@@ -14,3 +14,5 @@ To run the Python code you need to following files:
 chicago.csv
 new_york_city.csv
 washington.csv
+
+The three files contain data of the first six month of the year 2017.
