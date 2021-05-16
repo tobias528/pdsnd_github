@@ -1,5 +1,6 @@
 import time
 import pandas as pd
+from tabulate import tabulate
 
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
@@ -185,6 +186,7 @@ def raw_datalines(df):
 
     while selection == "yes":
         lines_count += 5
+        pd.set_option('display.max_columns', 200)
         print(df.head(lines_count))
         print("Type yes to see more raw data, type no to skip")
         selection = input().lower()
